@@ -27,3 +27,7 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+A good invariant would be to assume the previous 2 numbers in the sequence ((n-1) and (n-2)) are correct
+when summing them. The base cases fib(0) and fib(1) are correct and each recursive call depends on them
+to compute f(n). 
