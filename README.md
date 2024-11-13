@@ -29,5 +29,13 @@ most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
 
 A good invariant would be to assume the previous 2 numbers in the sequence ((n-1) and (n-2)) are correct
-when summing them. The base cases fib(0) and fib(1) are correct and each recursive call depends on them
-to compute f(n). 
+when summing them. The base cases fib(0) and fib(1) are correct by initialization so when summing them,
+the invariant guarantees that the previous calculation is correct and the sequence is built on valid
+previous values.
+
+I wrote the initial code, classmate in functional programming who took this class in the past
+provided guidance on better approach to only use one recursive call rather than two in the 
+line that pushes the next fibonacci value onto the sequence. Slides and notes from class 
+are where I figured the invariant from. Otherwise: "I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice."
+
+
